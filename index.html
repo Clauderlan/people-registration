@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ballerini - Desafio Extra</title>
+</head>
+<body>
+    <h1 id="text-introduction">Cadastro Online</h1>
+    <div class="container">
+        <div id="form-container">
+            <h2 class="form-text">Digite os dados<br>do usuario</h2>
+            <section id="form">
+                <div class="form-area">
+                    <label class="form-text" for="name">Nome </label>
+                    <input class = "input" type="text" name="names" id="name" required>
+                </div>
+                <div class="form-area">
+                    <label class="form-text" for="age">Idade </label>
+                    <input class = "input" type="number" name="ages" id="age" required>
+                </div>
+                <div class="form-area">
+                    <label class="form-text" for="skills">Skills </label>
+                    <input class = "input" type="text" name="skill" id="skills" required>
+                </div>
+
+                <button type="submit" id="submit" onclick="inputPaste();">Cadastrar usuario</button>
+
+            </section>
+        </div>
+        <div id="result-container">
+            <h2 class="form-text">Resultado:</h2>
+            <section id="result">
+                <div id="result-area">
+                    <h2 class="result-text">Nome: <span class = "output-text" id="name-output"></span></h2>
+                    <h2 class="result-text">Idade: <span class = "output-text" id="age-output"></span></h2>
+                    <h2 class="result-text">Skills: <span class = "output-text" id="skill-output"></span></h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

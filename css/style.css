@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Concent One;
+    src: url('../assets/ConcertOne-Regular.ttf') format('opentype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #2F2325;
+}
+
+#text-introduction {
+    text-align: center;
+    color: white;
+    font-family: 'Concent One', monospace;
+    font-size: 5rem;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    min-width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #483636;
+    border: 2px solid #FFF2E7;
+    border-radius: 30px;
+}
+
+/* FORM */
+
+#form-container {
+    min-width: 50%;
+    height: 100%;
+    border-right: 1px solid #FFF2E7;
+}
+.form-text {
+    font-size: 3rem;
+    font-family: 'Concent One', monospace;
+    color: #FFF2E7;
+    padding-top: 20px;
+    text-align: center;
+
+}
+#form {
+    height: 70%;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.form-area {
+    height: 100px;
+    width: 500px;
+    margin-top: 20px;
+}
+.input {
+    font-family: 'Concent One';
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    height: 80px;
+    width: 360px;
+    
+    background: rgba(255, 242, 231, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+#submit {
+    display: block;
+    cursor: pointer;
+    width: 400px;
+    height: 88px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'Concent One', monospace;
+    font-size: 3rem;
+    background: #FFF2E7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+/* RESULT AREA */
+
+#result-container {
+    min-width: 50%;
+    height: 100%;
+}
+#result {
+    height: 70%;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#result-area {
+    min-height: 100px;
+    max-height: 240px;
+    margin-bottom: 20px;
+    width: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.result-text {
+    font-family: 'Concent One', monospace;
+    font-size: 3rem;
+    color: lightblue;
+}
+.output-text {
+    font-family: 'Concent One', monospace;
+    font-size: 3rem;
+    color: yellow;
+    margin-left: 10px;
+}
+
+@media (max-width : 1032px){
+    #form-container {
+        background-color: #483636;
+        border: 2px solid #FFF2E7;
+    }
+    #result-container {
+        background-color: #483636;
+        border: 2px solid #FFF2E7;
+    }
+    .container {
+        background: none;
+        border: none;
+        border-radius: none;
+    }
+}
