@@ -14,16 +14,19 @@ function inputPaste() {
         nameOutput.innerHTML = name.value;
         ageOutput.innerHTML = age.value;
         skillOutput.innerHTML = skill.value;
-
         const result = document.getElementById('result');
         const resultArea = document.getElementById('result-area');
         resultAreaClone = resultArea.cloneNode(true);
         result.appendChild(resultAreaClone);
         resultArea.style.display = 'none';
-        resultAreaClone.style.display = 'block';
+        resultAreaClone.style.display = 'flex';
     }
     else {
         alert('Por favor, preencha TODOS os dados.');
     }
-    
+}
+const deletePost = (obj) => {
+    const parentPost = obj.parentNode;
+    const parentBoostPost = parentPost.parentNode;
+    parentBoostPost.removeChild(parentPost);
 }
