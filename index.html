@@ -27,16 +27,18 @@
                 </div>
 
                 <button type="submit" id="submit" onclick="inputPaste();">Cadastrar usuario</button>
-
             </section>
         </div>
         <div id="result-container">
             <h2 class="form-text">Resultado:</h2>
             <section id="result">
                 <div id="result-area">
-                    <h2 class="result-text">Nome: <span class = "output-text" id="name-output"></span></h2>
-                    <h2 class="result-text">Idade: <span class = "output-text" id="age-output"></span></h2>
-                    <h2 class="result-text">Skills: <span class = "output-text" id="skill-output"></span></h2>
+                    <button class="delete-btn" onclick="deletePost(this);">X</button>
+                    <div class = 'envelopment-post'>
+                        <h2 class="result-text">Nome: <span class = "output-text" id="name-output"></span></h2>
+                        <h2 class="result-text">Idade: <span class = "output-text" id="age-output"></span></h2>
+                        <h2 class="result-text">Skills: <span class = "output-text" id="skill-output"></span></h2>
+                    </div>
                 </div>
             </section>
         </div>
